@@ -1,0 +1,224 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #081120;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.navbar{
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+}
+
+.hero-section{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.hero-image{
+  max-width: 90%;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+  0%,100%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(-15px);
+  }
+
+}
+
+.section-padding{
+  padding: 100px 0;
+}
+
+.dark-section{
+  background: #0d1729;
+  padding: 100px 0;
+}
+
+.section-title{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title h2{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-text{
+  line-height: 1.9;
+  color: #d8e0ef;
+}
+
+.info-card,
+.feature-card,
+.team-card{
+  background: #111f35;
+  padding: 30px;
+  border-radius: 20px;
+  transition: 0.3s;
+  height: 100%;
+}
+
+.info-card:hover,
+.feature-card:hover,
+.team-card:hover{
+  transform: translateY(-10px);
+}
+
+.info-card i,
+.feature-card i{
+  font-size: 3rem;
+  color: #1ed760;
+  margin-bottom: 20px;
+}
+
+.tech-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  gap: 20px;
+}
+
+.tech-item{
+  background: #111f35;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.team-card{
+  text-align: center;
+}
+
+.team-img{
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid #1ed760;
+}
+
+/* VIDEO */
+
+.video-container{
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 60px auto 0 auto;
+
+  position: relative;
+
+  padding-bottom: 56.25%;
+
+  height: 0;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.video-container iframe{
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border: none;
+}
+
+/* QR CODE */
+
+.qr-section{
+  padding: 120px 0;
+  background: linear-gradient(
+    135deg,
+    #081120,
+    #0d1729
+  );
+}
+
+.qr-section h2{
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.qr-section p{
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: #c7d2e2;
+}
+
+.qr-card{
+  background: #111f35;
+
+  border-radius: 30px;
+
+  padding: 40px;
+
+  text-align: center;
+
+  box-shadow: 0 15px 50px rgba(0,0,0,0.4);
+}
+
+.qr-card img{
+  width: 260px;
+  height: 260px;
+
+  background: white;
+
+  padding: 15px;
+
+  border-radius: 20px;
+
+  margin-bottom: 25px;
+}
+
+.qr-card h5{
+  margin-bottom: 15px;
+}
+
+footer{
+  background: black;
+  padding: 40px 0;
+}
+
+@media(max-width: 768px){
+
+  .hero-section{
+    text-align: center;
+  }
+
+  .section-title h2{
+    font-size: 2rem;
+  }
+
+  .qr-section{
+    text-align: center;
+  }
+
+  .qr-section h2{
+    font-size: 2.5rem;
+  }
+
+}
